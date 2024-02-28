@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SpendingsBotApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpendingsBotApplication>(*args)
+    runApplication<SpendingsBotApplication>(*args)
 }
