@@ -1,5 +1,8 @@
 spring:
-  r2dbc:
-    url: r2dbc:postgresql://localhost:5432/spendings
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spendings
     username: postgres
     password: mysecretpassword
+
+bot:
+  token: ${BOT_TOKEN}
