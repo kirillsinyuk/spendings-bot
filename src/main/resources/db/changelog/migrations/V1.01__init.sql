@@ -10,7 +10,7 @@ create index category_chat_id_idx on category(chat_id);
 create table spending(
     id bigint primary key,
     chat_id bigint not null,
-    category_id varchar(255) not null,
+    category_id bigint REFERENCES category (id),
     description varchar(255),
     "sum" numeric not null,
     created_at timestamp not null
